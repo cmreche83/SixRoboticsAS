@@ -1,0 +1,16 @@
+job_a:
+job_b
+  dependencies:
+    - foo
+job_c:
+  dependencies:
+    - job_b
+    - job_d
+job_c_2:
+job_d:
+foo:
+job_e:
+  dependencies:
+    - job_b
+    - foo
+    - job_a
